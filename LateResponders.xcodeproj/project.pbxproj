@@ -15,8 +15,8 @@
 		D794BF292215AC90008B56AB /* OCLateResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = D794BF272215AC90008B56AB /* OCLateResponder.m */; };
 		D794BF2C2215ACC8008B56AB /* OCLateResponderProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF2A2215ACC8008B56AB /* OCLateResponderProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D794BF2D2215ACC8008B56AB /* OCLateResponderProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D794BF2B2215ACC8008B56AB /* OCLateResponderProxy.m */; };
-		D794BF2F2215ADFF008B56AB /* Macros.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF2E2215AD23008B56AB /* Macros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D794BF312215AE53008B56AB /* InterfaceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF302215AE53008B56AB /* InterfaceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D794BF2F2215ADFF008B56AB /* OCMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF2E2215AD23008B56AB /* OCMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D794BF312215AE53008B56AB /* OCInterfaceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF302215AE53008B56AB /* OCInterfaceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D794BF3A2215B0EC008B56AB /* OCResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF382215B0EC008B56AB /* OCResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D794BF3B2215B0EC008B56AB /* OCResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = D794BF392215B0EC008B56AB /* OCResponder.m */; };
 		D794BF3E2215B412008B56AB /* LateResponderRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794BF3D2215B412008B56AB /* LateResponderRegistryTests.swift */; };
@@ -47,8 +47,8 @@
 		D794BF272215AC90008B56AB /* OCLateResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLateResponder.m; sourceTree = "<group>"; };
 		D794BF2A2215ACC8008B56AB /* OCLateResponderProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLateResponderProxy.h; sourceTree = "<group>"; };
 		D794BF2B2215ACC8008B56AB /* OCLateResponderProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLateResponderProxy.m; sourceTree = "<group>"; };
-		D794BF2E2215AD23008B56AB /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
-		D794BF302215AE53008B56AB /* InterfaceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceKit.h; sourceTree = "<group>"; };
+		D794BF2E2215AD23008B56AB /* OCMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMacros.h; sourceTree = "<group>"; };
+		D794BF302215AE53008B56AB /* OCInterfaceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCInterfaceKit.h; sourceTree = "<group>"; };
 		D794BF382215B0EC008B56AB /* OCResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCResponder.h; sourceTree = "<group>"; };
 		D794BF392215B0EC008B56AB /* OCResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCResponder.m; sourceTree = "<group>"; };
 		D794BF3D2215B412008B56AB /* LateResponderRegistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateResponderRegistryTests.swift; sourceTree = "<group>"; };
@@ -133,8 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				D794BF082215A9FD008B56AB /* LateResponders.h */,
-				D794BF302215AE53008B56AB /* InterfaceKit.h */,
-				D794BF2E2215AD23008B56AB /* Macros.h */,
+				D794BF302215AE53008B56AB /* OCInterfaceKit.h */,
+				D794BF2E2215AD23008B56AB /* OCMacros.h */,
 				D794BF092215A9FD008B56AB /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -148,10 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D794BF2C2215ACC8008B56AB /* OCLateResponderProxy.h in Headers */,
-				D794BF312215AE53008B56AB /* InterfaceKit.h in Headers */,
+				D794BF312215AE53008B56AB /* OCInterfaceKit.h in Headers */,
 				D794BF3A2215B0EC008B56AB /* OCResponder.h in Headers */,
 				D794BF232215AAFA008B56AB /* OCLateResponderRegistry.h in Headers */,
-				D794BF2F2215ADFF008B56AB /* Macros.h in Headers */,
+				D794BF2F2215ADFF008B56AB /* OCMacros.h in Headers */,
 				D794BF162215A9FD008B56AB /* LateResponders.h in Headers */,
 				D794BF282215AC90008B56AB /* OCLateResponder.h in Headers */,
 			);

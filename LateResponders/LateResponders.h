@@ -7,7 +7,7 @@
 //
 
 
-#import <LateResponders/InterfaceKit.h>
+#import <LateResponders/OCInterfaceKit.h>
 
 //! Project version number for LateResponders.
 FOUNDATION_EXPORT double LateRespondersVersionNumber;

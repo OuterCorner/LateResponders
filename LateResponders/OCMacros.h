@@ -1,5 +1,5 @@
 //
-//  Macros.h
+//  OCMacros.h
 //  LateResponders
 //
 // Created by Paulo Andrade on 14/02/2019.

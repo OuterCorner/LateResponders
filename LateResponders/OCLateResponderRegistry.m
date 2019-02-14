@@ -7,7 +7,7 @@
 //
 
 #import "OCLateResponderRegistry.h"
-#import "InterfaceKit.h"
+#import "OCInterfaceKit.h"
 
 NSNotificationName const OCLateResponderRegistryDidUpdateNotification = @"OCLateResponderRegistryDidUpdateNotification";
 
