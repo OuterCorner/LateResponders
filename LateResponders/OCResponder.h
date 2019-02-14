@@ -6,8 +6,8 @@
 // Copyright © 2019 Outer Corner. All rights reserved.
 //
 
-#import <LateResponders/InterfaceKit.h>
-#import <LateResponders/Macros.h>
+#import "InterfaceKit.h"
+#import "Macros.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

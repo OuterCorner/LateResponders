@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <LateResponders/OCResponder.h>
+#import "OCResponder.h"
 
 @class OCLateResponderRegistry;
 

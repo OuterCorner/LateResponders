@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <LateResponders/OCResponder.h>
-#import <LateResponders/OCLateResponder.h>
+#import "OCResponder.h"
+#import "OCLateResponder.h"
 
 NS_SWIFT_NAME(LateResponderRegistryDidUpdateNotification)
 extern NSNotificationName const OCLateResponderRegistryDidUpdateNotification; /** sent when the late responder chain changes */
