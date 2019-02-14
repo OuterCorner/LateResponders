@@ -1,0 +1,13 @@
+//
+//  project.xcconfig
+//  LateResponders
+//
+// Created by Paulo Andrade on 14/02/2019.
+// Copyright © 2019 Outer Corner. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+SUPPORTED_PLATFORMS = macosx iphoneos iphonesimulator
+

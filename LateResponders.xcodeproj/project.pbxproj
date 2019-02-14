@@ -8,8 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		D794BF0F2215A9FD008B56AB /* LateResponders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D794BF052215A9FD008B56AB /* LateResponders.framework */; };
-		D794BF142215A9FD008B56AB /* LateRespondersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D794BF132215A9FD008B56AB /* LateRespondersTests.m */; };
 		D794BF162215A9FD008B56AB /* LateResponders.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF082215A9FD008B56AB /* LateResponders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D794BF232215AAFA008B56AB /* OCLateResponderRegistry.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF212215AAFA008B56AB /* OCLateResponderRegistry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D794BF242215AAFA008B56AB /* OCLateResponderRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = D794BF222215AAFA008B56AB /* OCLateResponderRegistry.m */; };
+		D794BF282215AC90008B56AB /* OCLateResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF262215AC90008B56AB /* OCLateResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D794BF292215AC90008B56AB /* OCLateResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = D794BF272215AC90008B56AB /* OCLateResponder.m */; };
+		D794BF2C2215ACC8008B56AB /* OCLateResponderProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF2A2215ACC8008B56AB /* OCLateResponderProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D794BF2D2215ACC8008B56AB /* OCLateResponderProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = D794BF2B2215ACC8008B56AB /* OCLateResponderProxy.m */; };
+		D794BF2F2215ADFF008B56AB /* Macros.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF2E2215AD23008B56AB /* Macros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D794BF312215AE53008B56AB /* InterfaceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF302215AE53008B56AB /* InterfaceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D794BF3A2215B0EC008B56AB /* OCResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF382215B0EC008B56AB /* OCResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D794BF3B2215B0EC008B56AB /* OCResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = D794BF392215B0EC008B56AB /* OCResponder.m */; };
+		D794BF3E2215B412008B56AB /* LateResponderRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794BF3D2215B412008B56AB /* LateResponderRegistryTests.swift */; };
+		D794BF402215CCF6008B56AB /* LateResponderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794BF3F2215CCF6008B56AB /* LateResponderTests.swift */; };
+		D794BF422215CE1C008B56AB /* LateResponderProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794BF412215CE1C008B56AB /* LateResponderProxyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +39,21 @@
 		D794BF082215A9FD008B56AB /* LateResponders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LateResponders.h; sourceTree = "<group>"; };
 		D794BF092215A9FD008B56AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D794BF0E2215A9FD008B56AB /* LateRespondersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LateRespondersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D794BF132215A9FD008B56AB /* LateRespondersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LateRespondersTests.m; sourceTree = "<group>"; };
 		D794BF152215A9FD008B56AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D794BF202215AA6F008B56AB /* project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = project.xcconfig; sourceTree = "<group>"; };
+		D794BF212215AAFA008B56AB /* OCLateResponderRegistry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLateResponderRegistry.h; sourceTree = "<group>"; };
+		D794BF222215AAFA008B56AB /* OCLateResponderRegistry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLateResponderRegistry.m; sourceTree = "<group>"; };
+		D794BF262215AC90008B56AB /* OCLateResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLateResponder.h; sourceTree = "<group>"; };
+		D794BF272215AC90008B56AB /* OCLateResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLateResponder.m; sourceTree = "<group>"; };
+		D794BF2A2215ACC8008B56AB /* OCLateResponderProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCLateResponderProxy.h; sourceTree = "<group>"; };
+		D794BF2B2215ACC8008B56AB /* OCLateResponderProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCLateResponderProxy.m; sourceTree = "<group>"; };
+		D794BF2E2215AD23008B56AB /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		D794BF302215AE53008B56AB /* InterfaceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceKit.h; sourceTree = "<group>"; };
+		D794BF382215B0EC008B56AB /* OCResponder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCResponder.h; sourceTree = "<group>"; };
+		D794BF392215B0EC008B56AB /* OCResponder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCResponder.m; sourceTree = "<group>"; };
+		D794BF3D2215B412008B56AB /* LateResponderRegistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateResponderRegistryTests.swift; sourceTree = "<group>"; };
+		D794BF3F2215CCF6008B56AB /* LateResponderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateResponderTests.swift; sourceTree = "<group>"; };
+		D794BF412215CE1C008B56AB /* LateResponderProxyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateResponderProxyTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +78,7 @@
 		D794BEFB2215A9FD008B56AB = {
 			isa = PBXGroup;
 			children = (
+				D794BF1F2215AA53008B56AB /* Config */,
 				D794BF072215A9FD008B56AB /* LateResponders */,
 				D794BF122215A9FD008B56AB /* LateRespondersTests */,
 				D794BF062215A9FD008B56AB /* Products */,
@@ -71,8 +97,15 @@
 		D794BF072215A9FD008B56AB /* LateResponders */ = {
 			isa = PBXGroup;
 			children = (
-				D794BF082215A9FD008B56AB /* LateResponders.h */,
-				D794BF092215A9FD008B56AB /* Info.plist */,
+				D794BF212215AAFA008B56AB /* OCLateResponderRegistry.h */,
+				D794BF222215AAFA008B56AB /* OCLateResponderRegistry.m */,
+				D794BF262215AC90008B56AB /* OCLateResponder.h */,
+				D794BF272215AC90008B56AB /* OCLateResponder.m */,
+				D794BF2A2215ACC8008B56AB /* OCLateResponderProxy.h */,
+				D794BF2B2215ACC8008B56AB /* OCLateResponderProxy.m */,
+				D794BF382215B0EC008B56AB /* OCResponder.h */,
+				D794BF392215B0EC008B56AB /* OCResponder.m */,
+				D794BF252215AB17008B56AB /* Supporting Files */,
 			);
 			path = LateResponders;
 			sourceTree = "<group>";
@@ -80,10 +113,31 @@
 		D794BF122215A9FD008B56AB /* LateRespondersTests */ = {
 			isa = PBXGroup;
 			children = (
-				D794BF132215A9FD008B56AB /* LateRespondersTests.m */,
 				D794BF152215A9FD008B56AB /* Info.plist */,
+				D794BF3D2215B412008B56AB /* LateResponderRegistryTests.swift */,
+				D794BF3F2215CCF6008B56AB /* LateResponderTests.swift */,
+				D794BF412215CE1C008B56AB /* LateResponderProxyTests.swift */,
 			);
 			path = LateRespondersTests;
+			sourceTree = "<group>";
+		};
+		D794BF1F2215AA53008B56AB /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D794BF202215AA6F008B56AB /* project.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D794BF252215AB17008B56AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D794BF082215A9FD008B56AB /* LateResponders.h */,
+				D794BF302215AE53008B56AB /* InterfaceKit.h */,
+				D794BF2E2215AD23008B56AB /* Macros.h */,
+				D794BF092215A9FD008B56AB /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,7 +147,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D794BF2C2215ACC8008B56AB /* OCLateResponderProxy.h in Headers */,
+				D794BF312215AE53008B56AB /* InterfaceKit.h in Headers */,
+				D794BF3A2215B0EC008B56AB /* OCResponder.h in Headers */,
+				D794BF232215AAFA008B56AB /* OCLateResponderRegistry.h in Headers */,
+				D794BF2F2215ADFF008B56AB /* Macros.h in Headers */,
 				D794BF162215A9FD008B56AB /* LateResponders.h in Headers */,
+				D794BF282215AC90008B56AB /* OCLateResponder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +202,7 @@
 		D794BEFC2215A9FD008B56AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = OC;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Outer Corner";
 				TargetAttributes = {
@@ -150,6 +211,7 @@
 					};
 					D794BF0D2215A9FD008B56AB = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -193,6 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D794BF3B2215B0EC008B56AB /* OCResponder.m in Sources */,
+				D794BF292215AC90008B56AB /* OCLateResponder.m in Sources */,
+				D794BF2D2215ACC8008B56AB /* OCLateResponderProxy.m in Sources */,
+				D794BF242215AAFA008B56AB /* OCLateResponderRegistry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D794BF142215A9FD008B56AB /* LateRespondersTests.m in Sources */,
+				D794BF402215CCF6008B56AB /* LateResponderTests.swift in Sources */,
+				D794BF3E2215B412008B56AB /* LateResponderRegistryTests.swift in Sources */,
+				D794BF422215CE1C008B56AB /* LateResponderProxyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +285,7 @@
 /* Begin XCBuildConfiguration section */
 		D794BF172215A9FD008B56AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D794BF202215AA6F008B56AB /* project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -247,7 +316,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -279,6 +347,7 @@
 		};
 		D794BF182215A9FD008B56AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D794BF202215AA6F008B56AB /* project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -309,7 +378,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -335,11 +403,10 @@
 		D794BF1A2215A9FD008B56AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 32HNEEH56A;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -353,6 +420,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outercorner.LateResponders;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -360,11 +428,10 @@
 		D794BF1B2215A9FD008B56AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 32HNEEH56A;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -378,6 +445,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outercorner.LateResponders;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -385,34 +453,47 @@
 		D794BF1D2215A9FD008B56AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Paulo Andrade (XV6U4CFNQG)";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 32HNEEH56A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LateRespondersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outercorner.LateRespondersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		D794BF1E2215A9FD008B56AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Paulo Andrade (XV6U4CFNQG)";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 32HNEEH56A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LateRespondersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outercorner.LateRespondersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

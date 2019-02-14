@@ -6,7 +6,8 @@
 // Copyright © 2019 Outer Corner. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+
+#import <LateResponders/InterfaceKit.h>
 
 //! Project version number for LateResponders.
 FOUNDATION_EXPORT double LateRespondersVersionNumber;
@@ -16,4 +17,7 @@ FOUNDATION_EXPORT const unsigned char LateRespondersVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <LateResponders/PublicHeader.h>
 
-
+#import <LateResponders/OCLateResponderRegistry.h>
+#import <LateResponders/OCLateResponder.h>
+#import <LateResponders/OCLateResponderProxy.h>
+#import <LateResponders/OCResponder.h>
