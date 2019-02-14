@@ -10,10 +10,11 @@
 #import "OCResponder.h"
 #import "OCLateResponder.h"
 
-NS_SWIFT_NAME(LateResponderRegistryDidUpdateNotification)
-extern NSNotificationName const OCLateResponderRegistryDidUpdateNotification; /** sent when the late responder chain changes */
 
 NS_ASSUME_NONNULL_BEGIN
+
+NS_SWIFT_NAME(LateResponderRegistryDidUpdateNotification)
+extern NSNotificationName const OCLateResponderRegistryDidUpdateNotification; /** sent when the late responder chain changes */
 
 
 /**
