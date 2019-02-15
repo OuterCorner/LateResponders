@@ -12,16 +12,19 @@
     __weak InterfaceKitResponder *_nextResponder;
 }
 
-
 #if TARGET_OS_IOS
 - (InterfaceKitResponder *)nextResponder
 {
+    if (self.nextResponderBlock != nil) {
+        return self.nextResponderBlock();
+    }
     return _nextResponder;
 }
 
 - (void)setNextResponder:(InterfaceKitResponder * __nullable)nextResponder
 {
     _nextResponder = nextResponder;
+    _nextResponderBlock = nil;
 }
 #endif
 

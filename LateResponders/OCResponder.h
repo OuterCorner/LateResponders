@@ -16,7 +16,13 @@ NS_SWIFT_NAME(Responder)
 
 #if TARGET_OS_IOS
 - (void)setNextResponder:(InterfaceKitResponder * __nullable)nextResponder;
+
+// Apparently there are cases in AppKit where the nextResponder ivar is accessed directly, bypassing the getter so we're not offering this feature on macOS yet
+@property (nonatomic, copy) InterfaceKitResponder *__nullable (^nextResponderBlock)(void);
+
 #endif
+
+
 
 @end
 
