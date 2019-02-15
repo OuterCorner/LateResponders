@@ -19,7 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 NS_SWIFT_NAME(LateResponder)
 @interface OCLateResponder : OCResponder
-
+#if TARGET_OS_OSX
+<NSTouchBarProvider>
+#endif
 
 /**
  Convenience initializer that uses 0 for weight
@@ -47,6 +49,16 @@ NS_SWIFT_NAME(LateResponder)
  */
 - (void)deregister;
 
+
+#if TARGET_OS_OSX
+
+@property (nullable, strong) NSTouchBar *touchBar NS_AVAILABLE_MAC(10.12.2);
+
+#elif TARGET_OS_IOS
+
+@property (nullable, strong) NSArray<UIKeyCommand *> *keyCommands;
+
+#endif
 @end
 
 NS_ASSUME_NONNULL_END
