@@ -21,14 +21,7 @@ typealias InterfaceKitResponder = UIResponder
 #endif
 
 func flattenResponderChainStarting(at initialResponder: InterfaceKitResponder) -> [InterfaceKitResponder] {
-    
-    var responders: [InterfaceKitResponder] = [initialResponder]
-    
-    guard let nextResponder = initialResponder.next else {
-        return responders
-    }
-    responders.append(contentsOf: flattenResponderChainStarting(at: nextResponder))
-    return responders
+    return Array(sequence(first: initialResponder, next: { $0.nextResponder }))
 }
 
 class LateResponderRegistryTests: XCTestCase {
