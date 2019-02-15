@@ -56,6 +56,27 @@
 }
 
 
+- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
+    NSMethodSignature *methodSignature;
+    // Keep a strong reference so we can safely send messages
+    id object = _proxiedResponder;
+    if (object) {
+        methodSignature = [object methodSignatureForSelector:aSelector];
+    } else {
+        // If obj is nil, we need to synthesize a NSMethodSignature. Smallest signature
+        // is (self, _cmd) according to the documention for NSMethodSignature.
+        NSString *types = [NSString stringWithFormat:@"%s%s", @encode(id), @encode(SEL)];
+        methodSignature = [NSMethodSignature signatureWithObjCTypes:[types UTF8String]];
+    }
+    return methodSignature;
+}
+
+// The runtime uses the method signature from above to create an NSInvocation and asks us to
+// forward it along as we see fit.
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    [anInvocation invokeWithTarget:_proxiedResponder];
+}
+
 #pragma mark - Explicitely forward [NS|UI]Responder methods
 
 - (void)updateUserActivityState:(NSUserActivity *)userActivity
