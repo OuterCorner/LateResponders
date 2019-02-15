@@ -12,10 +12,12 @@
 #if TARGET_OS_OSX // macOS
 
 #define InterfaceKitResponder NSResponder
+#define InterfaceKitViewController NSViewController
 
 #elif TARGET_OS_IOS // iOS
 
 #define InterfaceKitResponder UIResponder
+#define InterfaceKitViewController UIViewController
 
 #else // who knows!
 

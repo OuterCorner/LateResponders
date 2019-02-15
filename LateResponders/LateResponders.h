@@ -21,3 +21,4 @@ FOUNDATION_EXPORT const unsigned char LateRespondersVersionString[];
 #import <LateResponders/OCLateResponder.h>
 #import <LateResponders/OCLateResponderProxy.h>
 #import <LateResponders/OCResponder.h>
+#import <LateResponders/OCLateResponderRegistering.h>

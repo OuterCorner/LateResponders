@@ -22,6 +22,8 @@
 		D794BF3E2215B412008B56AB /* LateResponderRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794BF3D2215B412008B56AB /* LateResponderRegistryTests.swift */; };
 		D794BF402215CCF6008B56AB /* LateResponderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794BF3F2215CCF6008B56AB /* LateResponderTests.swift */; };
 		D794BF422215CE1C008B56AB /* LateResponderProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D794BF412215CE1C008B56AB /* LateResponderProxyTests.swift */; };
+		D794BF8222171E28008B56AB /* OCLateResponderRegistering.m in Sources */ = {isa = PBXBuildFile; fileRef = D794BF8022171E28008B56AB /* OCLateResponderRegistering.m */; };
+		D794BF8322171E28008B56AB /* OCLateResponderRegistering.h in Headers */ = {isa = PBXBuildFile; fileRef = D794BF8122171E28008B56AB /* OCLateResponderRegistering.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		D794BF3D2215B412008B56AB /* LateResponderRegistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateResponderRegistryTests.swift; sourceTree = "<group>"; };
 		D794BF3F2215CCF6008B56AB /* LateResponderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateResponderTests.swift; sourceTree = "<group>"; };
 		D794BF412215CE1C008B56AB /* LateResponderProxyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateResponderProxyTests.swift; sourceTree = "<group>"; };
+		D794BF8022171E28008B56AB /* OCLateResponderRegistering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCLateResponderRegistering.m; sourceTree = "<group>"; };
+		D794BF8122171E28008B56AB /* OCLateResponderRegistering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCLateResponderRegistering.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				D794BF2B2215ACC8008B56AB /* OCLateResponderProxy.m */,
 				D794BF382215B0EC008B56AB /* OCResponder.h */,
 				D794BF392215B0EC008B56AB /* OCResponder.m */,
+				D794BF8122171E28008B56AB /* OCLateResponderRegistering.h */,
+				D794BF8022171E28008B56AB /* OCLateResponderRegistering.m */,
 				D794BF252215AB17008B56AB /* Supporting Files */,
 			);
 			path = LateResponders;
@@ -154,6 +160,7 @@
 				D794BF2F2215ADFF008B56AB /* OCMacros.h in Headers */,
 				D794BF162215A9FD008B56AB /* LateResponders.h in Headers */,
 				D794BF282215AC90008B56AB /* OCLateResponder.h in Headers */,
+				D794BF8322171E28008B56AB /* OCLateResponderRegistering.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +265,7 @@
 				D794BF3B2215B0EC008B56AB /* OCResponder.m in Sources */,
 				D794BF292215AC90008B56AB /* OCLateResponder.m in Sources */,
 				D794BF2D2215ACC8008B56AB /* OCLateResponderProxy.m in Sources */,
+				D794BF8222171E28008B56AB /* OCLateResponderRegistering.m in Sources */,
 				D794BF242215AAFA008B56AB /* OCLateResponderRegistry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
