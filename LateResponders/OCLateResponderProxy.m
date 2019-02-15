@@ -50,8 +50,25 @@
     return proxyRespondsToSelector;
 }
 
+#if TARGET_OS_IOS
 
-- (id)forwardingTargetForSelector:(SEL)aSelector {
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+{
+    BOOL proxyRespondsToSelector = [self.proxiedResponder respondsToSelector:action];
+    if (!proxyRespondsToSelector) {
+        return NO;
+    }
+    
+    if (self.proxiedSelectorNames != nil && ![self.proxiedSelectorNames containsObject:NSStringFromSelector(action)]) {
+        return NO;
+    }
+    return [self.proxiedResponder canPerformAction:action withSender:sender];
+}
+
+#endif
+
+- (id)forwardingTargetForSelector:(SEL)aSelector
+{
     return _proxiedResponder;
 }
 
