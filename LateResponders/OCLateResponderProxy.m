@@ -36,6 +36,11 @@
 
 - (BOOL)respondsToSelector:(SEL)aSelector
 {
+    BOOL ourSuperclassRespondsToSelector = [OCLateResponder instancesRespondToSelector:aSelector];
+    if (ourSuperclassRespondsToSelector) {
+        return YES;
+    }
+    
     BOOL proxyRespondsToSelector = [self.proxiedResponder respondsToSelector:aSelector];
     
     if (self.proxiedSelectorNames != nil) {
@@ -48,6 +53,14 @@
 
 - (id)forwardingTargetForSelector:(SEL)aSelector {
     return _proxiedResponder;
+}
+
+
+#pragma mark - Explicitely forward [NS|UI]Responder methods
+
+- (void)updateUserActivityState:(NSUserActivity *)userActivity
+{
+    [self.proxiedResponder updateUserActivityState:userActivity];
 }
 
 @end
