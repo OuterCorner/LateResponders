@@ -9,7 +9,9 @@
 #import "OCLateResponder.h"
 #import "OCLateResponderRegistry.h"
 
-@implementation OCLateResponder
+@implementation OCLateResponder {
+    NSArray *_keyCommands;
+}
 
 - (instancetype)init
 {
@@ -36,5 +38,22 @@
     self = [self initWithWeight:0];
     return self;
 }
+
+#if TARGET_OS_IOS
+- (NSArray<UIKeyCommand *> *)keyCommands
+{
+    if (self.keyCommandsBlock) {
+        return self.keyCommandsBlock();
+    }
+    return _keyCommands;
+}
+
+- (void)setKeyCommands:(NSArray<UIKeyCommand *> *)keyCommands
+{
+    self.keyCommandsBlock = nil;
+    _keyCommands = keyCommands;
+}
+
+#endif
 
 @end

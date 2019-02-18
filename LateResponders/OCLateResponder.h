@@ -56,7 +56,8 @@ NS_SWIFT_NAME(LateResponder)
 
 #elif TARGET_OS_IOS
 
-@property (nullable, strong) NSArray<UIKeyCommand *> *keyCommands;
+@property (nullable, nonatomic, strong) NSArray<UIKeyCommand *> *keyCommands;
+@property (nullable, nonatomic, copy) NSArray<UIKeyCommand *> *__nullable (^keyCommandsBlock)(void);
 
 #endif
 @end
