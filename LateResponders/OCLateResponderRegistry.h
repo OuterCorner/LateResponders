@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OCResponder.h"
-#import "OCLateResponder.h"
+#import <LateResponders/OCResponder.h>
+#import <LateResponders/OCLateResponder.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
